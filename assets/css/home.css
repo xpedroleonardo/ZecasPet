@@ -1,0 +1,88 @@
+/* TODAS AS PARTES */
+
+/* .container main .feedback, */
+.container main .welcome,
+.container main .services,
+.container main .adoption,
+.container main .gallery-cell
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+.container main h1{
+  font-size: 7rem;
+  margin-bottom: 15px;
+  max-width: 350px;
+}
+
+.container main aside p{
+  max-width: 370px;
+  margin-bottom: 15px;
+}
+
+.container main aside button{
+  width: 20rem;
+  height: 6rem;
+
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border-input);
+  background: var(--primary);
+  color: white;
+  outline: none;
+  transition: background-color 0.2s;
+}
+
+.container main aside button:hover{
+  background-color: var(--primary-dark);
+}
+
+/* BOAS VINDAS */
+
+.container main .welcome aside:nth-child(2) img{
+  width: 620px;
+  filter: drop-shadow(2px 4px 8px #585858);
+}
+
+/* SERVIÇOS */
+
+.container main .services aside:nth-child(1) img{
+  width: 620px;
+  filter: drop-shadow(2px 4px 8px #585858);
+}
+
+/* PRODUTOS */
+
+
+/* ADOÇÃO */
+
+.container main .adoption aside:nth-child(2) img{
+  width: 620px;
+  filter: drop-shadow(2px 4px 8px #585858);
+}
+
+
+/* AVIALIAÇÃO */
+
+.container main .feedback .gallery-cell aside:nth-child(1) img{
+  width: 620px !important;
+  filter: drop-shadow(2px 4px 8px #585858);
+}
+
+.container main .feedback .gallery-cell aside:nth-child(2) {
+  height: 400px;
+}
+
+.container main .feedback .gallery-cell aside:nth-child(2) h1{
+  margin: 0;
+  font-size: 5rem;
+}
+
+.container main .feedback .gallery-cell aside:nth-child(2) p{
+  margin-top: 15px;
+}
+

@@ -1,0 +1,299 @@
+/* CONFIGURAÇÕES GLOBAIS E ESPECIAIS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  font-size: 62.5%;
+  
+  --color-background: #F0F0F7;
+
+  --color-line-in-white: #E6E6F0;
+  --color-input-background: #F8F8FC;
+  --border-input: #C4C4C4;
+
+  --color-background: #F0F0F7;
+  --color-primary-lighter: #9871F5;
+  --color-primary-light: #916BEA;
+  --primary: #00BFA6;
+  --primary-dark: #00aa93;
+  --color-primary-darker: #6842C2;
+  --color-secundary: #04D361;
+  --color-secundary-dark: #04BF58;
+  --color-title-in-primary: #FFFFFF;
+  --color-text-in-primary: #D4C2FF;
+  --color-text-title: #32264D;
+  --color-text-complement: #9C98A6;
+  --color-text-base: #6A6180;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+html{
+  height: 100vh;
+}
+
+body{
+  height: 100%;
+  background: url(../img/background.svg);
+  /* background: #F4F4F4; */
+}
+
+body,
+input,
+button,
+textarea{
+  font: 500 1.6rem Poppins;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+span{
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.container{
+  background: #FFFFFF;
+  width: 100%;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-cell {
+  width: 100%;
+  counter-increment: gallery-cell;
+}
+
+/* ESTILO DA BARRA DE NAVEGAÇÃO */
+
+.container nav {
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+
+  /* border-bottom: 1px solid black; */
+}
+
+.container .logoNav a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.container .logoNav:hover{
+  transform: scale(1.1);
+  transition: .5s;
+}
+
+
+.container .logoNav a img{
+  margin: 0 10px;
+  width: 35px;
+}
+
+.container nav .linksNav {
+  margin-right: 120px;
+}
+
+.container nav .linksNav a {
+  margin-right: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  transition: color 0.2s;
+}
+
+.container nav .linksNav a:hover {
+  color: var(--primary);
+}
+
+/* ESTILO DO CONTEÚDO PRINCIPAL */
+
+.container main{
+  padding: 0 10px;
+}
+
+.container main div{
+  height: 660px;
+  /* border-bottom: 1px solid black; */
+}
+
+/* ESTILO DO RODAPÉ */
+
+.container footer {
+  background: #F5F5F5;
+}
+
+.container footer .newslatter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px 0;
+  position: relative;
+}
+
+.block{
+  width: 55%;
+  margin: 50px 0 0px;
+  position: relative;
+}
+
+.container footer .newslatter .block input{
+  width: 100%;
+  height: 90px;
+  border-radius: 10px;
+  padding: 0 25rem 0 1.6rem;
+  border: 1px solid var(--border-input);
+  background: var(--color-input-background);
+  outline: none;
+}
+
+.container footer .newslatter .block input:focus{
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+.container footer .newslatter .block button{
+  position: absolute;
+  width: 34%;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid var(--border-input);
+  background: var(--primary);
+  color: white;
+  outline: none;
+  right: 2%;
+  top: 17%;
+  transition: background-color 0.2s;
+}
+
+.container footer .newslatter .block button:hover{
+  background-color: var(--primary-dark);
+}
+
+
+.container footer .infos{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin-bottom: 30px;
+}
+
+.container footer .infos aside:nth-child(1){
+  margin-top: auto;
+}
+
+.container footer .infos aside:nth-child(1) .social{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+
+  margin: 15px 0;
+}
+
+.container footer .infos aside:nth-child(2){
+  text-align: center;
+  width: 150px;
+}
+
+.container footer .credits{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container footer .credits .row{
+  border: 1px solid #C5C5C5;
+  width: 80%;
+}
+
+.container footer .credits span{
+  margin: 10px 0;
+}
+
+/*  */
+
+
+/* EDITANDO A SCROLL BAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #747474;
+  border-radius: 10px;
+}
+
+
+@media(max-width: 700px){
+  :root{
+      font-size: 60%;
+  }
+}
+
+
+/* POPUP DE INFORMAÇÔES DAS IMAGENS */
+
+.popup {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #FAFAFA;
+  color: #333;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 10%;
+  left: 30%;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
