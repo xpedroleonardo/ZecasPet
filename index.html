@@ -15,7 +15,7 @@
     
     <nav>
       <div class="logoNav">
-        <a href="">
+        <a href="index.html">
           <!-- Quebrar linha no title -->
           <img class="logo" src="assets/img/icons/paw.svg" title="dsufnsd&#13;sfgsdf
           " draggable="false"> 
@@ -50,12 +50,16 @@
           </p>
         </aside>
         
-        <aside class="popup" onclick="showInfos(1)">
-          <img src="assets/img/welcome.png" title="Bem vindo&#13;Click na imagem " alt="Bem Vindo" srcset="" draggable="false">
+        <aside class="popup" onclick="showInfos(1)" onmouseover="showTitle(1)" onmouseleave="closeTitle(1)">
+          <img src="assets/img/welcome.png" alt="Bem Vindo" draggable="false">
           
-            <p class="popuptext" id="myPopup1">
+            <p class="popupText" id="Popup1">
               Essa imagens tem direitos, acesse o link e veja o autor dela <br>
-              <a href="https://www.google.com/" target="_blank"> dfsfdsdf</a>
+              <a href="https://www.google.com/" target="_blank">Unsplah</a>
+            </p>
+
+            <p class="popupTitle" id="Title1">
+              <b>Click na imagem</b>
             </p>
         </aside>
 
@@ -63,8 +67,17 @@
 
       <div class="services">
 
-        <aside>
+        <aside class="popup" onclick="showInfos(2)" onmouseover="showTitle(2)" onmouseleave="closeTitle(2)">
           <img src="assets/img/services.png" title="Bem Vindo" alt="Bem Vindo" srcset="" draggable="false">
+
+          <p class="popupText" id="Popup2">
+            Essa imagens tem direitos, acesse o link e veja o autor dela <br>
+            <a href="https://www.google.com/" target="_blank">Unsplah</a>
+          </p>
+
+          <p class="popupTitle" id="Title2">
+            <b>Click na imagem</b>
+          </p>
         </aside>
 
         <aside>
@@ -89,15 +102,41 @@
       <div class="products">
         
         <aside>
-          <span>erterterter</span>
-          <h2>ertert</h2>
-
-
-          <a href="">Ver Produtos</a>
+          <span>Compre o melhor para seu pet</span>
+          <h2>Produtos</h2>
+          
+          <a href="">
+            <button>Ver Produtos</button>
+          </a>
         </aside>
 
-        <aside>
-          ffdifm
+        <aside class="gallery js-flickity" data-flickity-options='{"wrapAround": true,"autoPlay": true,"prevNextButtons": false,"pageDots": false }'
+        >
+        
+          <div class="gallery-cell">
+            <img src="assets/img/background.svg" height="300" width="270" alt="">
+            <p>Description</p>
+            <button>1</button>
+          </div>  
+          
+          <div class="gallery-cell">
+            <img src="assets/img/background.svg" height="300" width="270" alt="">
+            <p>Description</p>
+            <button>2</button>
+          </div>   
+
+          <div class="gallery-cell">
+            <img src="assets/img/background.svg" height="300" width="270" alt="">
+            <p>Description</p>
+            <button>3</button>
+          </div>   
+
+          <div class="gallery-cell">
+            <img src="assets/img/background.svg" height="300" width="270" alt="">
+            <p>Description</p>
+            <button>4</button>
+          </div>   
+
         </aside>
 
       </div>
@@ -129,28 +168,7 @@
 
       <div class="feedback">
 
-        <!-- <aside>
-          <img src="/assets/img/01.png" title="Bem Vindo" alt="Bem Vindo" srcset="" draggable="false">
-        </aside>
-
-        <aside>
-          <span>Gostaria de adotar ?</span>
-
-          <h1>Comentários</h1>
-
-          <span>⭐⭐⭐⭐⭐</span>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Vivamus vehicula quam eget mauris imperdiet ullamcorper.
-            Ut rhoncus pulvinar tristique. In quam mi, accumsan id 
-            porttitor vitae, placerat quis nunc. Pellentesque et sagittis leo.
-          </p>
-
-          <span>Jéssica da Silva</span> -->
-
-
-        <div class="gallery js-flickity" data-flickity-options='{"wrapAround": true,"autoPlay": true, "prevNextButtons": false}'>
+        <div class="gallery js-flickity" data-flickity-options='{"wrapAround": true,"autoPlay": true, "prevNextButtons": false, "fade": true}'>
           
           <div class="gallery-cell">
             <aside>
@@ -183,7 +201,7 @@
             <aside>
               <span>O que nossos clientes falam</span>
 
-              <h1>Comentários</h1>
+              <h1>Comentários2</h1>
 
               <span>⭐⭐⭐⭐⭐</span>
 
@@ -206,7 +224,7 @@
             <aside>
               <span>O que nossos clientes falam</span>
 
-              <h1>Comentários</h1>
+              <h1>Comentários3</h1>
 
               <span>⭐⭐⭐⭐⭐</span>
 
@@ -222,10 +240,6 @@
           </div>
 
         </div>
-
-
-         
-        <!-- </aside> -->
 
       </div>
 
@@ -247,7 +261,7 @@
         <aside>
           <h4>Redes Sociais</h4>
           <div class="social">
-            <img src="assets/img/icons/paw.svg" onmouseover="teste()" width="20" alt="">
+            <img src="assets/img/icons/paw.svg" width="20" alt="">
             <img src="assets/img/icons/paw.svg" width="20" alt="">
           </div>
         </aside>
@@ -267,12 +281,7 @@
       </div>
     </footer>
   </div>
-  <script src="./assets/flickity-docs.min.js"></script>
-  <script>
-    function showInfos(id) {
-      var popup = document.getElementById("myPopup"+ id);
-      popup.classList.toggle("show");
-    }
-  </script>
+  <script src="assets/scripts/flickity-docs.min.js"></script>
+  <script src="assets/scripts/main.js"></script>
 </body>
 </html>
