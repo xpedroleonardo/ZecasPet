@@ -3,14 +3,13 @@
 
 :root {
   font-size: 62.5%;
-  
-  --color-background: #F0F0F7;
 
   --color-line-in-white: #E6E6F0;
   --color-input-background: #F8F8FC;
   --border-input: #C4C4C4;
 
-  --color-background: #F0F0F7;
+  --color-background: #FFFF;
+  --color-background-footer: #F5F5F5;
   --color-primary-lighter: #9871F5;
   --color-primary-light: #916BEA;
   --primary: #00BFA6;
@@ -39,7 +38,6 @@ html{
 body{
   height: 100%;
   background: url(../img/background.svg);
-  /* background: #F4F4F4; */
 }
 
 body,
@@ -64,7 +62,7 @@ span{
 }
 
 .container{
-  background: #FFFFFF;
+  background: var(--color-background);
   width: 100%;
 
   max-width: 1200px;
@@ -138,7 +136,7 @@ span{
 /* ESTILO DO RODAPÉ */
 
 .container footer {
-  background: #F5F5F5;
+  background: var(--color-background-footer);
 }
 
 .container footer .newslatter{
@@ -149,6 +147,10 @@ span{
 
   padding: 50px 0;
   position: relative;
+}
+
+.container footer .newslatter p{
+  text-align: center;
 }
 
 .block{
@@ -246,7 +248,7 @@ span{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #747474;
+  background: var(--border-input);
   border-radius: 10px;
 }
 

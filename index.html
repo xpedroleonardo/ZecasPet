@@ -17,8 +17,7 @@
       <div class="logoNav">
         <a href="index.html">
           <!-- Quebrar linha no title -->
-          <img class="logo" src="assets/img/icons/paw.svg" title="dsufnsd&#13;sfgsdf
-          " draggable="false"> 
+          <img class="logo" src="assets/img/icons/paw.svg" title="Ir para página Inicial" draggable="false"> 
           ZecasPet
         </a>
       </div>
@@ -26,7 +25,7 @@
         <a href="services">Serviços</a>
         <a href="products">Produtos</a>
         <a href="about">Adoção</a>
-        <a href="undefined">Decidir</a>
+        <a href="clinic">Clínica</a>
         <a href="contact.html">Contato</a>
       </div>
     </nav>
@@ -160,8 +159,17 @@
           </a>
         </aside>
 
-        <aside>
+        <aside class="popup" onclick="showInfos(3)" onmouseover="showTitle(3)" onmouseleave="closeTitle(3)">
           <img src="assets/img/adotation.png" title="Bem Vindo" alt="Bem Vindo" srcset="" draggable="false">
+
+          <p class="popupText" id="Popup3">
+            Essa imagens tem direitos, acesse o link e veja o autor dela <br>
+            <a href="https://www.google.com/" target="_blank">Unsplah</a>
+          </p>
+
+          <p class="popupTitle" id="Title3">
+            <b>Click na imagem</b>
+          </p>
         </aside>
 
       </div>
@@ -171,8 +179,17 @@
         <div class="gallery js-flickity" data-flickity-options='{"wrapAround": true,"autoPlay": true, "prevNextButtons": false, "fade": true}'>
           
           <div class="gallery-cell">
-            <aside>
+            <aside class="popup" onclick="showInfos(4)" onmouseover="showTitle(4)" onmouseleave="closeTitle(4)">
               <img src="assets/img/feedback.png" title="Bem Vindo" alt="Bem Vindo" srcset="" draggable="false">
+
+              <p class="popupText" id="Popup4">
+                Essa imagens tem direitos, acesse o link e veja o autor dela <br>
+                <a href="https://www.google.com/" target="_blank">Unsplah</a>
+              </p>
+    
+              <p class="popupTitle" id="Title4">
+                <b>Click na imagem</b>
+              </p>
             </aside>
 
             <aside>
@@ -195,7 +212,7 @@
 
           <div class="gallery-cell">
             <aside>
-              <img src="assets/img/feedback.png" title="Bem Vindo" alt="Bem Vindo" srcset="" draggable="false">
+              <img src="assets/img/feedback2.png" title="Bem Vindo" alt="Bem Vindo" srcset="" draggable="false">
             </aside>
 
             <aside>
@@ -218,7 +235,7 @@
 
           <div class="gallery-cell">
             <aside>
-              <img src="assets/img/feedback.png" title="Bem Vindo" alt="Bem Vindo" srcset="" draggable="false">
+              <img src="assets/img/feedback3.png" title="Bem Vindo" alt="Bem Vindo" srcset="" draggable="false">
             </aside>
 
             <aside>
@@ -250,10 +267,13 @@
 
       <div class="newslatter">
         <h1>Deseja receber informações ?</h1>
-        <p>Description</p>
+        <p>
+          Sobre adoção, novos produtos entre outros...<br>
+          Cadastre seu e-mail abaixo
+        </p>
         <div class="block">
           <input type="email" placeholder="Digite o seu Email" />
-          <button>Enviar</button> 
+          <button>Cadastrar</button> 
         </div>
       </div>
 
@@ -271,7 +291,7 @@
 
           <h4>(11) 4040-7070</h4>
 
-          <p>Rua cambuci, 14, JD Odete, SP </p>
+          <p>Localização</p>
         </aside>
       </div>
 
