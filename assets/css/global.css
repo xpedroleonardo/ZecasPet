@@ -128,9 +128,7 @@ span{
 }
 
 .container main div{
-  /* padding: 10px 0; */
   height: 660px;
-  /* border-bottom: 1px solid black; */
 }
 
 /* ESTILO DO RODAPÉ */
@@ -214,6 +212,10 @@ span{
 .container footer .infos aside:nth-child(2){
   text-align: center;
   width: 150px;
+}
+
+.container footer .infos aside:nth-child(2) h4{
+  margin: 1rem 0;
 }
 
 .container footer .credits{

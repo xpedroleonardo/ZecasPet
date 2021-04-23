@@ -9,7 +9,8 @@
 
 .container main .contact,
 .container main .form,
-.container main .form aside:nth-child(2){
+.container main .form section:nth-child(2),
+.container main .store{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +19,7 @@
 
 /* ESTILO DO CONTATO */
 .container main .contact img{
-  width: 90rem;
+  width: 80rem;
 }
 
 .container main .contact h1{
@@ -27,8 +28,8 @@
 
 /* ESTILO DO FORMULÁRIO */
 
-.container main .form aside:nth-child(1) input,
-.container main .form aside:nth-child(2) input{
+.container main .form section:nth-child(1) input,
+.container main .form section:nth-child(2) input{
   height: 5.6rem;
   margin-top: 1rem;
   border-radius: 0.8rem;
@@ -38,14 +39,14 @@
   padding: 0 1.6rem;
 }
 
-.container main .form aside:nth-child(1) input{
+.container main .form section:nth-child(1) input{
   width: 44.8rem;
 }
-.container main .form aside:nth-child(2) input{
+.container main .form section:nth-child(2) input{
   width: 90rem;
 }
 
-.container main .form aside:nth-child(2) textarea{
+.container main .form section:nth-child(2) textarea{
   height: 40rem;
   width: 90rem;
   margin: 1rem 0;
@@ -58,11 +59,11 @@
 }
 
 .container main .form input:focus,
-.container main .form aside:nth-child(2) textarea:focus{
+.container main .form section:nth-child(2) textarea:focus{
   box-shadow: 0 0 0 2px var(--primary);
 }
 
-.container main aside:nth-child(2) button{
+.container main section:nth-child(2) button{
   width: 40rem;
   height: 6rem;
 
@@ -75,11 +76,29 @@
   transition: background-color 0.2s;
 }
 
-.container main aside button:hover{
+.container main section button:hover{
   background-color: var(--primary-dark);
 }
 
 /* ESTILO DAS LOJAS FÍSICAS */
-.container main .store{
-  background: green;
+.container main .store h1{
+  font-size: 7rem;
+  margin-bottom: 15px;
+  max-width: 350px;
+}
+
+.container main .store aside p{
+  max-width: 370px;
+  margin-bottom: 15px;
+}
+
+.container main .store {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.container main .store aside:nth-child(2) img,
+.container main .store aside:nth-child(1) img {
+  width: 620px;
+  filter: drop-shadow(2px 4px 8px #585858);
 }
