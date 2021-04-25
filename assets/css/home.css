@@ -24,7 +24,8 @@
   margin-bottom: 15px;
 }
 
-.container main aside button{
+.container main aside button,
+.container main section button{
   width: 20rem;
   height: 6rem;
 
@@ -37,7 +38,8 @@
   transition: background-color 0.2s;
 }
 
-.container main aside button:hover{
+.container main aside button:hover,
+.container main section button:hover{
   background-color: var(--primary-dark);
 }
 
@@ -64,26 +66,26 @@
   padding: 50px;
 }
 
-.container main .products aside:nth-child(1) h2{
+.container main .products section:nth-child(1) h2{
   font-size: 5rem;
 }
 
-.container main .products aside:nth-child(1) a{
+.container main .products section:nth-child(1) a{
   position: absolute;
   top: 50px;
   right: 50px;
 }
 
-.container main .products aside:nth-child(1) button{
+.container main .products section:nth-child(1) button{
   width: 15rem;
   height: 4rem;
 }
 
-.container main .products aside:nth-child(2){
+.container main .products section:nth-child(2){
   width: 100%;
 }
 
-.container main .products aside:nth-child(2) .gallery-cell{
+.container main .products section:nth-child(2) .gallery-cell{
   margin-right: 30px;
   height: 500px;
   padding: 15px;
@@ -92,18 +94,17 @@
   flex-direction: column;
 }
 
-.container main .products aside:nth-child(2) .gallery-cell img{
+.container main .products section:nth-child(2) .gallery-cell img{
   object-fit: cover;
 }
 
-.container main .products aside:nth-child(2) .gallery-cell p{
+.container main .products section:nth-child(2) .gallery-cell p{
   margin: 0;
 }
 
-.container main .products aside:nth-child(2) .gallery-cell button{
+.container main .products section:nth-child(2) .gallery-cell button{
   margin: 0;
 }
-
 
 /* ADOÇÃO */
 

@@ -83,8 +83,6 @@ span{
   align-items: center;
   justify-content: space-between;
   top: 0;
-
-  /* border-bottom: 1px solid black; */
 }
 
 .container .logoNav a{
@@ -143,7 +141,7 @@ span{
   align-items: center;
   justify-content: center;
 
-  padding: 50px 0;
+  padding: 35px 0;
   position: relative;
 }
 
@@ -197,11 +195,11 @@ span{
   margin-bottom: 30px;
 }
 
-.container footer .infos aside:nth-child(1){
+.container footer .infos section:nth-child(1){
   margin-top: auto;
 }
 
-.container footer .infos aside:nth-child(1) .social{
+.container footer .infos section:nth-child(1) .social{
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -209,12 +207,12 @@ span{
   margin: 15px 0;
 }
 
-.container footer .infos aside:nth-child(2){
+.container footer .infos section:nth-child(2){
   text-align: center;
   width: 150px;
 }
 
-.container footer .infos aside:nth-child(2) h4{
+.container footer .infos section:nth-child(2) h4{
   margin: 1rem 0;
 }
 
@@ -224,7 +222,7 @@ span{
   flex-direction: column;
 }
 
-.container footer .credits .row{
+.row{
   border: 1px solid #C5C5C5;
   width: 80%;
 }

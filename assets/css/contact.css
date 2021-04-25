@@ -4,7 +4,7 @@
 }
 
 .container main div{
-  border-bottom: 2px solid black;
+  align-items: center;
 }
 
 .container main .contact,
@@ -26,7 +26,16 @@
   margin: 20px 0;
 }
 
+.container main .contact .row {
+  height: 0;
+  margin: 2rem 0;
+}
+
 /* ESTILO DO FORMULÁRIO */
+
+.container main .form {
+  margin-top: -60px;
+}
 
 .container main .form section:nth-child(1) input,
 .container main .form section:nth-child(2) input{
@@ -81,8 +90,27 @@
 }
 
 /* ESTILO DAS LOJAS FÍSICAS */
+.container main .storeInfos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container main .storeInfos .row {
+  height: 0;
+  margin: 2rem 0;
+}
+
+.container main .storeInfos h1 {
+  margin-bottom: 1rem;
+}
+
+.container main .storeInfos p {
+  max-width: 800px;
+}
+
 .container main .store h1{
-  font-size: 7rem;
   margin-bottom: 15px;
   max-width: 350px;
 }
