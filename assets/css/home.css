@@ -90,12 +90,12 @@
   height: 500px;
   padding: 15px;
   width: 320px;
-  /* background-color: var(--primary); */
   flex-direction: column;
 }
 
 .container main .products section:nth-child(2) .gallery-cell img{
   object-fit: cover;
+  border-radius: 15px;
 }
 
 .container main .products section:nth-child(2) .gallery-cell p{

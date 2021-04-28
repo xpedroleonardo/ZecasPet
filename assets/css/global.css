@@ -10,8 +10,6 @@
 
   --color-background: #FFFF;
   --color-background-footer: #F5F5F5;
-  --color-primary-lighter: #9871F5;
-  --color-primary-light: #916BEA;
   --primary: #00BFA6;
   --primary-dark: #00aa93;
   --color-primary-darker: #6842C2;
@@ -96,7 +94,6 @@ span{
   transform: scale(1.1);
   transition: .5s;
 }
-
 
 .container .logoNav a img{
   margin: 0 10px;
@@ -231,9 +228,6 @@ span{
   margin: 10px 0;
 }
 
-/*  */
-
-
 /* EDITANDO A SCROLL BAR */
 
 /* width */
@@ -259,9 +253,7 @@ span{
   }
 }
 
-
 /* POPUP DE INFORMAÇÔES DAS IMAGENS */
-
 .popup {
   position: relative;
   cursor: pointer;
@@ -271,23 +263,8 @@ span{
   user-select: none;
 }
 
-/* The actual popup */
-.popup .popupText {
-  visibility: hidden;
-  width: 300px;
-  background-color: #FAFAFA;
-  border: 1px solid var(--border-input);
-  color: #333;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px;
-  position: absolute;
-  z-index: 2;
-  bottom: 10%;
-  left: 30%;
-}
-
 .popup .popupTitle {
+  border: 1px solid var(--border-input);
   visibility: hidden;
   width: 300px;
   background-color: #FAFAFA;
@@ -308,12 +285,6 @@ span{
   animation: fadeIn 1s;
 }
 
-.popup .close {
-  visibility: hidden;
-  -webkit-animation: fadeOut 1s;
-  animation: fadeOut 1s;
-}
-
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
   from {opacity: 0;} 
@@ -323,14 +294,4 @@ span{
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
-}
-
-@-webkit-keyframes fadeOut {
-  from {opacity: 1;} 
-  to {opacity: 0;}
-}
-
-@keyframes fadeOut {
-  from {opacity: 1;}
-  to {opacity: 0;}
 }
