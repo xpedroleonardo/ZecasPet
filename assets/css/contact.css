@@ -1,4 +1,8 @@
 /* ESTILO PÁGINA TODA */
+.container main div{
+  height: 660px;
+}
+
 .container nav .linksNav a:nth-child(5){
   color: var(--primary);
 }
@@ -20,6 +24,7 @@
 /* ESTILO DO CONTATO */
 .container main .contact img{
   width: 80rem;
+  margin-top: -35px;
 }
 
 .container main .contact h1{

@@ -1,5 +1,9 @@
 /* TODAS AS PARTES */
 
+.container main div{
+  height: 660px;
+}
+
 /* .container main .feedback, */
 .container main .welcome,
 .container main .services,

@@ -12,21 +12,13 @@
   --color-background-footer: #F5F5F5;
   --primary: #00BFA6;
   --primary-dark: #00aa93;
-  --color-primary-darker: #6842C2;
-  --color-secundary: #04D361;
-  --color-secundary-dark: #04BF58;
-  --color-title-in-primary: #FFFFFF;
-  --color-text-in-primary: #D4C2FF;
-  --color-text-title: #32264D;
-  --color-text-complement: #9C98A6;
-  --color-text-base: #6A6180;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins';
+  font-family: 'Poppins', Calibri, sans-serif;
 }
 
 html{
@@ -120,10 +112,6 @@ span{
 
 .container main{
   padding: 0 10px;
-}
-
-.container main div{
-  height: 660px;
 }
 
 /* ESTILO DO RODAPÉ */
@@ -253,49 +241,10 @@ span{
   }
 }
 
-/* POPUP DE INFORMAÇÔES DAS IMAGENS */
-.popup {
-  position: relative;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
-.popup .popupTitle {
-  border: 1px solid var(--border-input);
-  visibility: hidden;
-  width: 300px;
-  background-color: #FAFAFA;
-  color: #333;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px;
-  position: absolute;
-  z-index: 1;
-  bottom: 10%;
-  left: 30%;
+.modal {
+  opacity: 0;
 }
-
-/* Toggle this class - hide and show the popup */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
-
 
 
 .modal {

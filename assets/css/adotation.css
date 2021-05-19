@@ -1,0 +1,81 @@
+.container nav .linksNav a:nth-child(3){
+  color: var(--primary);
+}
+
+.container main {
+	padding: 36px 110px;
+}
+
+main h2, main h3{
+	color: #00BFA6 ;
+}
+
+#principal {
+	background-color: var(--primary);
+	text-align: center;
+	color: white !important;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: black ;
+	text-align: center;
+	padding: 20px;
+}
+
+header h1{
+	color: #00BFA6 ;
+}
+
+header p {
+	margin-bottom: 2em;
+}
+
+main section div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+main section h3 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+main section h2  {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+main section h4 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+main section p {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+main section li {
+	align-items: center;
+	justify-content: center;
+}
+
+main section div figure {
+	margin: 30px;
+}

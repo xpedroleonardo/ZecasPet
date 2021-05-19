@@ -1,0 +1,110 @@
+.container nav .linksNav a:nth-child(2){
+  color: var(--primary);
+}
+
+#lateral-esquerda {
+  /*background-color: cadetblue;*/
+  width: 180px;
+  height: 550px;
+  float: left;
+}
+
+#lateral-esquerda ul {
+  list-style: none;
+  color: var(--primary);
+}
+
+
+#principal {
+  margin: 0px auto;
+  margin-top: 50px;
+}
+
+#sublinhado {
+  text-decoration: underline;
+  list-style: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+#imagem {
+  float: left;
+  padding-right: 20px;
+  padding-left: 10px;
+  width: 500px;
+}
+
+#centralizado {
+  text-align: center;
+}
+
+#star {
+  float:left
+}
+
+#lateral-direita {
+  text-align: center;
+  /*background-color: teal;*/
+  height: 550px;
+}
+
+#letra-menor {
+  font-size: 10px;
+}
+
+#carrinho {
+  border-radius: 10px;
+  border: 1px solid var(--border-input);
+  width: 300px;
+  height: 40px;
+  margin: 14px 0;
+  color: white;
+  background: var(--primary);
+  transition: background-color 0.2s;
+}
+
+#carrinho:hover {
+  background: var(--primary-dark);
+} 
+
+
+#texto-produto {
+  text-align: left;
+  padding-top: 60px;
+  font-size: 13px;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+.btn-peso {
+  border-radius: inherit;
+  margin: 2px;
+  width: 140px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.btn-peso:hover,
+.btn-peso:focus {
+  background: var(--primary);
+  color: white;
+}
+
+#peso {
+  display: flex;
+  flex-direction: column;
+}
+
+#peso div {
+  margin-top: 15px;
+}

@@ -1,0 +1,112 @@
+.container nav .linksNav a:nth-child(2){
+  color: var(--primary);
+}
+
+#lateral-esquerda {
+  /*background-color: cadetblue;*/
+  width: 170px;
+  height: 2380px;
+  float: left;
+}
+
+#lateral-esquerda ul {
+  list-style: none;
+  color: var(--primary);
+}
+
+#principal {
+  margin: 0px auto;
+  height: 2380px;
+  margin-top: 50px;
+}
+
+#sublinhado {
+  text-decoration: underline;
+}
+
+#produtos {
+/*background-color: silver;*/
+width: 1035px;
+float: right;
+height: 2500px;
+display: flex;
+}
+
+.cardProduct{
+  width: 238px;
+  flex-wrap: nowrap;
+  padding-top: 50px;
+  display: inline-block;
+
+}
+
+.cardProduct img{
+  object-fit: cover;
+  border-radius: 15px;
+  
+}
+
+.cardProduct p{
+  /*border:2px groove green;*/
+  text-align: center;
+  width: 200px;
+}
+
+#palavra-produtos {
+  display: flex;
+  justify-content: space-between;
+}
+
+#palavra-produtos {
+  display: flex;
+  justify-content: space-between;
+}
+
+#palavra-produtos button {
+  width: 7rem;
+  height: 4rem;
+}
+
+#menu {
+  padding-left: 0%
+}
+
+.cardProduct button {
+  width: 20rem;
+  height: 5rem;
+}
+
+button{
+  border-radius: 10px;
+  border: 1px solid var(--border-input);
+  background: var(--primary);
+  color: white;
+  outline: none;
+  transition: background-color 0.2s;
+}
+
+button:hover{
+  background-color: var(--primary-dark);
+}
+
+#caixa-de-pesquisa {
+  display: inline-flex;
+}
+
+#caixa-de-pesquisa1 {
+  border-radius: 10px;
+  padding: 0 10px;
+  border: 1px solid var(--border-input);
+  background: var(--color-input-background);
+  outline: none;
+  margin-right: 5px;
+}
+
+#caixa-de-pesquisa1:focus {
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+.cardProduct a {
+  text-decoration: none;
+  color: white;
+}
