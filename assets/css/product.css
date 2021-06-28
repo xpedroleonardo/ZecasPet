@@ -1,7 +1,3 @@
-.container nav .linksNav a:nth-child(2){
-  color: var(--primary);
-}
-
 #lateral-esquerda {
   /*background-color: cadetblue;*/
   width: 170px;

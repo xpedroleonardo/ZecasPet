@@ -82,6 +82,10 @@ span{
   font-weight: bold;
 }
 
+.container nav .linksNav a.selected{
+  color: var(--primary);
+}
+
 .container .logoNav:hover{
   transform: scale(1.05);
   transition: .5s;

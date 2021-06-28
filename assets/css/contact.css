@@ -3,10 +3,6 @@
   height: 660px;
 }
 
-.container nav .linksNav a:nth-child(5){
-  color: var(--primary);
-}
-
 .container main div{
   align-items: center;
 }
